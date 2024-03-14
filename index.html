@@ -67,7 +67,7 @@
           <h3>Hypotheses</h3>
 
           <div class="body">
-            <div style="margin-bottom: 2rem;">
+            <div class="background-separator" style="margin-bottom: 2rem;">
               <b>Misclick Rate</b> (the frequency with which the users click something else on the page before finding the correct button for the task):
             
               <div class="small-container">
@@ -83,7 +83,7 @@
               Prediction: I predict that we will reject the null hypothesis because changing the text color to black makes it easier to read the words and make users less prone to clicking the wrong button.
               
             </div>
-            <div style="margin-bottom: 2rem;">
+            <div class="background-separator" style="margin-bottom: 2rem;">
               <b>Time on Page</b> (the time spent on the webpage for each user group before completing the task):
             
               <div class="small-container">
@@ -98,7 +98,7 @@
               Prediction: I predict that we will reject the null hypothesis because the appointments are sorted in ascending date order, and the relevant information about the doctor and group are highlighted more prominently, making it easier to navigate to the desired appointment quicker.
              
             </div>
-            <div>
+            <div class="background-separator" style="margin-bottom: 2rem;">
               <b>Time to First Click</b> (the amount of time that elapses before users make a first click):
             
               <div class="small-container">
@@ -115,7 +115,6 @@
 
           </div>
         </div>
-        
 
 
       </div>
@@ -197,7 +196,7 @@
             <p>
               <b>Test: </b>I conducted a Chi-Squared Homogeniety test for this metric since we are trying to determine if there is a significant difference in the distribution of did_mislick (which is a categorical variable). After conducting the test, we get the following results:
             </p>
-            <p>
+            <div class="background-separator background-separator-centered">
               <li>
                 df: 1
               </li>
@@ -207,7 +206,7 @@
               <li>
                 p-value	0.4261352551
               </li>
-            </p>
+            </div>
             <p>
               <b>Analyis: </b>A chi-squared statistic of 0.6333 with 1 degree of freedom does not indicate a large discrepancy between the expected and observed frequencies of misclicks in versions A and B of the website. Furthermore, the p-value of 0.4261 is much greater than 0.05, which suggests that the difference in misclick rates between the two website versions is not statistically significant.
             </p>
@@ -223,7 +222,7 @@
             <p>
               <b>Test: </b>I conducted a One-Tailed T Test since we are trying to determine whether there is significant difference in a certain direction (time spent on page for B is lower than A). After conducting the test, we get the following results:
             </p>
-            <p>
+            <div class="background-separator background-separator-centered">
               <li>
                 Avg(A): 23826.68421
               </li>
@@ -246,7 +245,7 @@
                 P-value: 0.0006707193483
               </li>
 
-            </p>
+            </div>
             <p>
               <b>Analyis: </b>The p-value of 0.0006707193483, or about 0.067%, is far below 0.05. This indicates that the probability of observing a difference as large or larger than the one observed is very small if there were actually no difference in the population means (null hypothesis). The negative T-score of -3.702419 indicates that the average time on page for version B is significantly lower than for version A. The degrees of freedom are sufficient for the t-distribution to closely approximate the normal distribution, as it is greater than the standard 20 degrees of freedom.
             </p>
@@ -262,7 +261,7 @@
             <p>
               <b>Test: </b>I conducted a One-Tailed T Test since we are trying to determine whether there is significant difference in a certain direction (time to first click for B is lower than A). After conducting the test, we get the following results:
             </p>
-            <p>
+            <div class="background-separator background-separator-centered">
               <li>
                 Avg(A):	12945.05263
               </li>
@@ -284,7 +283,7 @@
               <li>
                 P-value:	0.00006238110132
               </li>
-            </p>
+            </div>
 
             <p>
               <b>Analyis: </b>The p-value of approximately 0.000062, or 0.0062%, is much lower than the standard alpha level of 0.05. This indicates that there is a statistically significant difference in the time on page between versions A and B, with version A having a longer time to first click. The negative T-score of -4.6755 indicates that the average time to first click for version B is significantly lower than for version A. The degrees of freedom are sufficient for the t-distribution to closely approximate the normal distribution, as it is greater than the standard 20 degrees of freedom.

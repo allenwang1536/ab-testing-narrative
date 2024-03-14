@@ -60,6 +60,8 @@ li {
            
 
             .body {
+                display: flex;
+                flex-direction: column;
                 color: #707070;
 
                 .images-container {
@@ -82,6 +84,16 @@ li {
                     img {
                         width: 40%;
                     }
+                }
+
+                .background-separator {
+                    border:5px solid #D7E8FC;
+                    padding: 1rem;
+                    border-radius: 5px;
+                    width: fit-content;
+                }
+                .background-separator-centered {
+                    align-self: center;
                 }
 
             }
